@@ -1,4 +1,4 @@
-import time
+rimport time
 import smtplib
 from email.message import EmailMessage
 from pythonping import ping
@@ -29,12 +29,12 @@ def ping_website():
             error_counter = 0
             msg = EmailMessage()
             msg['Subject'] = 'Your website has gone down and requires immediate attention!'
-            msg['From'] = 'lukejtaylor444@gmail.com'
+            msg['From'] = 'enter-your-email'
             msg['To'] = user_data["email"]
             msg.set_content('this is an automated message to warn you that your website is currently down')
 
             with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-                smtp.login('lukejtaylor444@gmail.com', 'vnhb ogdj rezj lmdg')
+                smtp.login('lukejtaylor444@gmail.com', 'enter 2fa password key')
                 smtp.send_message(msg)
 
 
