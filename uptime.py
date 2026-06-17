@@ -1,4 +1,4 @@
-rimport time
+import time
 import smtplib
 from email.message import EmailMessage
 from pythonping import ping
